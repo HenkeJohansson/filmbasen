@@ -1,0 +1,613 @@
+/*
+ * Author="Henrik Johansson"
+ * Date="2013-11-30"
+ * Project="filmbasen"        */
+
+/* https://kuler.adobe.com/Like-a-Boss-Winter-color-theme-3201992/ */
+
+/******************************/
+/************GRUNDEN***********/
+/******************************/
+
+body {
+    background-color: #6093BF;
+    margin: 0;
+    height: 100%;
+    
+    /* Stylar den text som inte är omsluten av taggar (<p>, <h3> etc. bra vid formulären) */
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: none;
+}
+
+/* Blåa rutorna med innehåll */
+#content {
+    margin: 30px auto;
+    padding: 20px 20px 50px 20px;
+    width: 390px;
+    background-color: #005395;
+    
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+}
+
+#content2 {
+    margin: 30px auto;
+    padding: 20px 20px 50px 20px;
+    width: 800px;
+    background-color: #005395;
+    
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+}
+
+/* Float & Clearfix */
+.clearfix {
+    clear: both;
+}
+
+.float-left {
+    float: left;
+}
+
+/***************/
+/* Scrollbaren */
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Bakgrunds-grejen */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Den man drar i */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,255,255,.8);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.5); 
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255,255,255,.4); 
+}
+
+/* Hörnet */
+::-webkit-scrollbar-corner {
+    display: none;
+}
+
+/******************************/
+/***********TYPOGRAFI**********/
+/******************************/
+
+h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 90px;
+    color: #ff0052;
+    text-align: center;
+    margin: 20px;
+    
+    /* Toningen på texten */
+    background: -webkit-gradient(linear,left top,left bottom,from(#ff0052),to(#8e2b88));    
+    -webkit-background-clip: text;    
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-family: 'Bangers', cursive;
+    font-size: 70px;
+    color: #ff0052;
+    text-align: center;
+    margin: 20px;
+    
+    /* Toningen på texten */
+    background: -webkit-gradient(linear,left top,left bottom,from(#ff0052),to(#8e2b88));    
+    -webkit-background-clip: text;    
+    -webkit-text-fill-color: transparent;
+}
+
+h3 {
+    font: bold 32px Helvetica, Arial, sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 36px;
+    color: #fff;
+}
+
+.title {
+    text-shadow: 1px 1px #f2b705,
+                 2px 2px #f2b705,
+                 3px 3px #BF9104,
+                 4px 4px #000;
+    -webkit-transition: all 0.12s ease-out;
+    -moz-transition:    all 0.12s ease-out;
+    -ms-transition:     all 0.12s ease-out;
+    -o-transition:      all 0.12s ease-out;
+}
+
+.title:hover {
+    position: relative;
+    top: -3px;
+    left: -3px;
+    text-shadow: 1px 1px #f2b705,
+                 2px 2px #f2b705,
+                 3px 3px #f2b705,
+                 4px 4px #f2b705,
+                 5px 5px #BF9104,
+                 6px 6px #000;
+}
+
+p {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+
+::selection {
+    background-color: #f2b705;
+    color: #fff;
+} /* Ger annan färg vid markering av text på sidan */
+
+/******************************/
+/*************MENYN************/
+/******************************/
+
+nav {
+    background-color: rgb(63,63,63);
+    width: 100%;
+    margin-top: -20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    padding: 25px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 22px;
+}
+
+nav li:hover {
+    background-color: rgb(36,36,36);
+}
+
+
+/******************************/
+/************FORMULÄR**********/
+/******************************/
+
+
+/************ADDSTUFF**********/
+.form_text {
+    margin: 20px 0px 2px 0;
+    padding: 2px 5px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 22px;
+    color: #fff;
+}
+
+#form-prt1 {
+    margin-right: 60px;
+    padding: 20px;
+    background-color: rgba(255,255,255, .6);
+    
+    -webkit-border-radius: 2% 2%;
+    border-radius: 2% 2%;
+}
+
+.form-peo, .form-act {
+    margin-left: 100px;
+    padding: 20px;
+    background-color: rgba(255,255,255, .6);
+    
+    -webkit-border-radius: 6% 6%;
+    border-radius: 6% 6%;
+}
+
+.form-act {
+    overflow: scroll;
+    height: 360px;
+    width: 250px;
+    overflow-x: hidden;
+    border: solid 5px rgba(255,255,255, .1); /* Fullösning för att scrollbaren gick utanför diven */
+}
+
+#act-1, #act-2, #act-3 {
+    /*float: left;*/
+    width: auto;
+    margin-bottom: 30px;
+}
+
+.spn-act {
+    background-color: rgba(255,255,255, .6);
+    padding: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-weight: 700;
+    color: #000;
+}
+
+h4 .float-left {
+    }
+
+label {
+    display: block;
+}
+
+input[type=text], [type=password], [type=search] { 	
+  padding: 10px;
+  width: 227px;
+  font-family: Helvetica;
+  font-size: 16px;
+  color: #fff;
+  border: 0px;
+  background: #003157;
+  line-height: 1;
+  outline: none;
+  border: 2px solid transparent;
+  
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+}
+
+input[type=text]:hover, input[type=text]:focus,
+input[type=password]:hover, input[type=password]:focus,
+input[type=search]:hover, input[type=search]:focus {
+    background-color: #003C6B;
+    border: 2px solid #000;
+}
+
+textarea {
+    max-width: 227px;
+    max-height: 160px;
+    font-family: Helvetica;
+    color: #fff;
+    border: 0;
+    background: #003157;
+    outline: none;
+    border: 2px solid transparent;
+  
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+}
+
+textarea:hover, textarea:focus {
+    background-color: #003C6B;
+    border: 2px solid #000;
+}
+
+/**********SEARCH**********/
+#search {
+    width: 340px;
+    margin: 30px auto;
+} /* För att få search-rutan cetrerad */
+
+input[type=search] {
+    width: 200px;
+}
+
+/*********RADIOBUTTONS*********/
+
+
+
+
+/******************************/
+/************Listorna**********/
+/******************************/
+
+.poster {
+    max-width: 200px;
+    float: left;
+}
+
+.trivia {
+    width: 260px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    position: absolute;
+    left: 200px;
+    top: 40px;
+}
+
+.trivia span {
+    padding: 3px;
+    background: #6697BF;
+}
+
+.synopsis   {
+    width: 260px;
+    margin-left: 30px;
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+}
+
+.year {
+    display: inline-block;
+    position: relative;
+    margin: 15px;
+    font-size: 24px;
+}
+
+.rating {
+    display: inline-block;
+    position: relative;
+    margin: 15px;
+    font-size: 26px;
+    width: 160px;
+}
+
+.floater {
+    float: left;
+    height: 300px;
+    position: relative;
+}
+
+.row {
+    margin-bottom: 130px;
+    height: 350px;
+    position: relative;
+}
+
+.table {
+    float: left;
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
+
+/*******************************/
+/***********TABBELLEN***********/
+
+table {
+    width:250px;
+    border-collapse: collapse;
+}
+
+th {
+    font-family: "Helvetica" sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    background: rgba(255,255,255, .9);
+}
+
+tr, th {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+td {
+    padding: 5px;
+}
+
+tr:nth-child(1n) {
+    background-color: rgba(255,255,255, .6);
+}
+
+#table2, #table2 table {
+    width: 300px;
+    margin: 0 auto;
+}
+
+/******************************/
+/************KNAPPAR***********/
+/******************************/
+
+/*****************PLATT KNAPP****************/
+.flat_btn span {
+    display: inline-block;
+    width: 75px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    /*text-shadow: 0 -1px 1px rgba(19,65,88,.5);*/
+    
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f2b705), to(#f28705));
+    background: -moz-linear-gradient(#f2b705, #f28705);
+    background: #f2b705;
+    
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+    -moz-transition: -moz-transform .2s ease-in-out;
+    -o-transition: -o-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+}
+
+.flat_btn {		
+  display: inline-block;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow:
+    0 8px 0 #bf9104,
+    0 15px 20px rgba(0,0,0,.35);
+  -moz-box-shadow:
+    0 8px 0 #bf9104,
+    0 15px 20px rgba(0,0,0,.35);
+  box-shadow:
+    0 8px 0 #bf9104,
+    0 15px 20px rgba(0,0,0,.35);
+    
+  -webkit-transition: -webkit-box-shadow .2s ease-in-out;
+  -moz-transition: -moz-box-shadow .2s ease-in-out;
+  -o-transition: -o-box-shadow .2s ease-in-out;
+  transition: box-shadow .2s ease-in-out;
+}
+
+.flat_btn:active {	
+  -webkit-box-shadow: 
+    0 8px 0 #bf9104,
+    0 12px 10px rgba(0,0,0,.3);
+  -moz-box-shadow: 
+    0 8px 0 #bf9104,
+    0 12px 10px rgba(0,0,0,.3);
+  box-shadow: 
+    0 8px 0 #bf9104,
+    0 12px 10px rgba(0,0,0,.3);
+}
+
+.flat_btn:active span {	
+  -webkit-transform: translate(0, 4px);
+  -moz-transform: translate(0, 4px);
+  -o-transform: translate(0, 4px);
+  transform: translate(0, 4px);
+}
+
+#buttons {
+    width: 370px;
+    margin: auto;
+} /* diven runt knapparna på index */
+
+
+/***************************/
+/*KNAPPEN*FÖR*SÖKFORMULÄRET*/
+
+input#search-btn, input#submit-btn {
+    cursor: pointer;
+    padding: 10px 25px;
+    position: relative;
+    top: -5px;
+    
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f2b705), to(#f28705));
+    background: -moz-linear-gradient(#f2b705, #f28705);
+    background: #f2b705;
+    
+    border: 1px solid #f2b705;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    
+  -webkit-box-shadow:
+    0 8px 0 #bf9104,
+    0 15px 20px rgba(0,0,0,.35);
+  -moz-box-shadow:
+    0 8px 0 #bf9104,
+    0 15px 20px rgba(0,0,0,.35);
+  box-shadow:
+    0 8px 0 #bf9104,
+    0 15px 20px rgba(0,0,0,.35);
+    
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+}
+    
+input#search-btn:active, input#submit:active {
+    -webkit-box-shadow: 
+      0 8px 0 #bf9104,
+      0 12px 10px rgba(0,0,0,.3);
+    -moz-box-shadow: 
+      0 8px 0 #bf9104,
+      0 12px 10px rgba(0,0,0,.3);
+    box-shadow: 
+      0 8px 0 #bf9104,
+      0 12px 10px rgba(0,0,0,.3);
+}
+
+/********************RUND KNAPP*********************/
+
+.round_btn span {
+    display: inline-block;
+    padding: 13px 9px;
+    text-decoration: none;
+    color: rgb(36,36,36);
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    /*text-shadow: 0 -1px 1px rgba(19,65,88,.5);*/
+    
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f2b705), to(#f28705));
+    background: -moz-linear-gradient(#f28705, #f2b705);
+    background: #F28705;
+    
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+    -moz-transition: -moz-transform .2s ease-in-out;
+    -o-transition: -o-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+}
+
+.round_btn {		
+  display: inline-block;
+  float: right;
+  margin-top: 15px;
+  margin-right: 20px;
+  
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow:
+    0 8px 0 #BD6904,
+    0 15px 20px rgba(0,0,0,.35);
+  -moz-box-shadow:
+    0 8px 0 #BD6904,
+    0 15px 20px rgba(0,0,0,.35);
+  box-shadow:
+    0 8px 0 #BD6904,
+    0 15px 20px rgba(0,0,0,.35);
+    
+  -webkit-transition: -webkit-box-shadow .2s ease-in-out;
+  -moz-transition: -moz-box-shadow .2s ease-in-out;
+  -o-transition: -o-box-shadow .2s ease-in-out;
+  transition: box-shadow .2s ease-in-out;
+}
+
+.round_btn:active {	
+  -webkit-box-shadow: 
+    0 8px 0 #BD6904,
+    0 12px 10px rgba(0,0,0,.3);
+  -moz-box-shadow: 
+    0 8px 0 #BD6904,
+    0 12px 10px rgba(0,0,0,.3);
+  box-shadow: 
+    0 8px 0 #BD6904,
+    0 12px 10px rgba(0,0,0,.3);
+}
+
+.round_btn:active span {	
+  -webkit-transform: translate(0, 4px);
+  -moz-transform: translate(0, 4px);
+  -o-transform: translate(0, 4px);
+  transform: translate(0, 4px);
+}
